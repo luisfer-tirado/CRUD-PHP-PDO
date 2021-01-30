@@ -1,0 +1,36 @@
+body{
+    background-image: url(imagenes/imgConsultas.jpg);
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial;
+}
+
+
+#tabla{
+    text-align: left;
+    width: auto;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    margin: auto;
+}
+
+tr, td{
+    padding: 20px;
+}
+
+.titulo{
+    background-color: royalblue;
+    color: white;
+    border-bottom: solid 10px slateblue;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+

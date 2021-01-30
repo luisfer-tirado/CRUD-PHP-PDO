@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Conexion a la base de datos</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <main>
+            <section id="banner">
+                <img src="../imagenes/imgHeader.jpg">
+                <div class="contenedor">
+                    <h1>Programar es tu pasión?</h1>
+                    <a href="indexOperaciones.html">Datos registrados</a>
+                </div>
+            </section>
+
+            <section id="formulario">
+                <div id="preguntas">
+                    <form action="index.php" method="POST" enctype="multipart/form-data">
+                        <h2>Registrate para más información</h2>
+                        <label for="correo">Correo electronico:</label>
+                        <input type="text" name = "CORREO" id="correo">
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" name = "NOMBRE"id="nombre">
+                        <label for="apPaterno">Apellido paterno:</label>
+                        <input type="text" name = "APPATERNO" id="apPaterno">
+                        <label for="apMaterno">Apellido materno:</label>
+                        <input type="text" name = "APMATERNO" id="apMaterno">
+                        <label for="edad">Edad:</label>
+                        <input type="number" name = "EDAD" id="edad">
+                        <label for="sexo">Sexo:</label>
+                        <input type="text" name = "SEXO" id="sexo">
+                        <input type="text" id="data" name="DATA" hidden="hidden">
+                        <button type="submit">Registrarse</button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="informacion">
+                <div class="contenedor2">
+                    <h1>10 cosas que todo programador debe de hacer</h1>
+                
+                    <p>La programación no es fácil. Es desafiante. Es desconocida. Muchas personas quieren aprender a programar sin saber qué es ni qué necesita un programador. 
+                        Muchos se imaginan una suerte de matemáticas, trigonometría y la teoría de la relatividad. Sin embargo, aprender a programar no dista tanto de aprender 
+                        un nuevo idioma o tocar un instrumento —sí, aunque parezca mentira—.</p>
+
+                    <p><br>¿Entonces qué necesita un programador? Vamos por partes. Es cierto que puedes encontrarte con problemas complejos con algoritmos y árboles, pero la 
+                        programación se basa en la estructuración de soluciones para determinados problemas, y la ejecución de ésta. Una solución mal implementada te llevará 
+                        irremediablemente a otros problemas —incluso más graves—, aunque este tipo de cosas se descubre con la experiencia.</p>
+
+                    <p><br>La experiencia adquirida a través de la práctica es lenta, pero es la que te dará soltura, confianza y autonomía. Por eso es importante programar, 
+                        programar, y si tienes ratos libres, programar. Eso es lo que marcará la diferencia. Como todo en la vida. Saber no es tan importante como lo que 
+                        haces con lo que sabes.</p> 
+                        
+                    <p><br>La diferencia entre un programador «teórico» y uno «práctico» es que el que ha estado luchando contra el código en proyectos reales, sabe las 
+                        consecuencias que puede acarrear escribir un determinado código. Y eso lo hace mejor, con una visión más global. Ese es el sistema de enseñanza 
+                        de KeepCoding: 100% práctico y con una visión amplia, que es lo que vas a encontrar en la vida real. Así que te traigo este decálogo con 10 cosas que 
+                        necesita un programador, que quiera estar entre los mejores.</p>
+                    
+                    <h2>Programar</h2>    
+                    <p>
+                        La diferencia entre un programador «teórico» y uno «práctico» es que el que ha estado luchando contra el código en proyectos reales, sabe las 
+                        consecuencias que puede acarrear escribir un determinado código. Y eso lo hace mejor, con una visión más global. Ese es el sistema de enseñanza de 
+                        KeepCoding: 100% práctico y con una visión amplia, que es lo que vas a encontrar en la vida real. Así que te traigo este decálogo con 10 cosas que 
+                        necesita un programador, que quiera estar entre los mejores.
+                    </p>
+
+                    <h2>Leer documentación</h2>
+                    <p>
+                        Para poder programar de forma fluida hay que conocer bien el lenguaje, y para ello, leer documentación es una de las herramientas más útiles para 
+                        poder tenerlo bajo control. Porque cada lenguaje tiene su idiosincrasia y, de esta manera, conocerás los parámetros que reciben, lo que devuelven, 
+                        en qué versiones están disponibles, etc.
+                    </p>
+
+                    <h2>Preguntar y buscar</h2>
+                    <p>
+                        Este punto puede parecer absurdo, pero no lo es. Un buen programador debe ser productivo, y quedarse bloqueado durante horas delante de una pantalla 
+                        buscando una solución no lo es. Nadie puede saberlo todo, por eso, si no consigues encontrar una solución, pregúntale a alguien que haya pasado por 
+                        ello, ya sea un compañero de trabajo, un amigo de la universidad o en Internet. Hay que saber buscar, saber cuándo, y dónde. Google, StackOverflow, 
+                        Quora… debemos entender que estas herramientas son imprescindibles y que las comunidades de programadores son de las más sanas y útiles de toda la red.
+                    </p>
+
+                    <h2>Hacerse entender</h2>
+                    <p>
+                        En cualquier entorno profesional, la comunicación es sumamente importante y, demasiadas veces, entre los equipos de desarrollo y otros departamentos, 
+                        esta comunicación brilla por su falta de claridad. Debido a que es más difícil que alguien no técnico sepa interpretar un código e incluso acciones que 
+                        un desarrollador toma, un buen desarrollador debería tener un mínimo de habilidades comunicativas para, no sólo saber explicarse con su equipo, sino 
+                        también con otros departamentos.
+                    </p>
+
+                    <h2>Hacer tests</h2>
+                    <p>
+                        Puedes pensar «soy uno con el Código, el Código está conmigo», y creer que tu código es tan limpio y perfecto que nunca va a fallar. Pero falla, oh, 
+                        sí. Por eso hay que programar tests, sobre todo conforme va creciendo una aplicación. De esta forma tendremos el código mucho más estructurado, controlado 
+                        y probado. Es la forma de evitar las malas sorpresas.
+                    </p>
+
+                    <h2>Disfrutar y curiosear</h2>
+                    <p>
+                        Como todo en la vida, si disfrutas haciendo algo serás muy bueno en ello. Por eso, si disfrutas con la programación y tienes esa pasión llegarás lejos. Muy lejos. 
+                        Esa pasión moverá montañas y te generará una curiosidad insaciable. Algo que diferencia al programador de gran parte de los mortales es su avidez de conocimiento. 
+                        Es esta característica la que posibilita el crecimiento del programador. Las ganas de resolver diferentes problemas te llevarán a desarrollar nuevas habilidades, 
+                        descubrir nuevos lenguajes y entender cualquier tecnología subyacente.
+                    </p>
+
+                    <h2>Lectura y compresión rapida</h2>
+                    <p>
+                        Como he mencionado antes, la productividad es uno de los puntos fuertes de un programador, y para ello, una lectura con velocidad y de alta comprensión es vital. 
+                        Porque programar no sólo se basa en escribir, gran parte es leer.
+                    </p>
+
+                    <h2>Conocer varios lenguajes de programación</h2>
+                    <p>
+                        Del mismo modo que hablar varios idiomas te da una visión mucho más amplia de una cultura, y te prepara las conexiones neuronales para uno nuevo, con los 
+                        lenguajes sucede lo mismo. Y eso no significa comprender varios lenguajes que te permitan salir del paso, sino dominarlos de tal manera que puedas desenvolverte 
+                        con holgura en casi todas las situaciones.
+                    </p>
+
+                    <h2>Realizar un control de versiones</h2>
+                    <p>
+                        Uno de los modos de trabajo vitales que necesita un programador es trabajar con algún sistema de control de versiones, ya sea git u otro. Saber trabajar de acuerdo 
+                        a algún branching model es lo que le permite implementar cambios con seguridad, tanto si trabaja solo o en equipo.
+                    </p>
+                    
+                    <h2>Seguir formándose</h2>
+                    <p>
+                        No conozco a ningún buen programador que se haya dado por satisfecho con lo que sabe. Al igual que un médico, un profesor o un abogado debe seguir formándose para 
+                        desempeñar su trabajo con absoluta profesionalidad, un programador también. Un programador es inconformista por naturaleza, por ello nunca ha de decir «sé suficiente»,
+                        sino formarse en las últimas tecnologías para así incrementar su valía. El aprendizaje continuo es obligatorio para poder estar al frente de este sector.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </body>
+    <footer>INSTITUTO TECNOLÓGICO SUPERIOR DE MISANTLA. &COPY; 2020</footer>
+</html>

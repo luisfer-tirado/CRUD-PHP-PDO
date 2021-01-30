@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Datos de usuario</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="indexOperaciones.css">
+        <script src="consulta.js"></script>
+    </head>
+    <body>
+        <main>
+            <section id="bannerDatos">
+                <img src="../imagenes/imgProgramacion.jpg">
+                <div class="contenedor">
+                    <h1>Si lo puedes imaginar, lo puedes realizar </h1>
+                </div>
+            </section>
+
+            <section id="imagenes">
+                <div class="galeria">
+                    <div class="linea"></div>
+                    <div class="contenedor-imagenes">
+                        <div class="imagen">
+                            <img src="../imagenes/img1.jpg" alt="">
+                            <div class="overlay">
+                                <h2>No se puede tener un gran software sin un gran equipo</h2>
+                            </div>
+                        </div>
+                        <div class="imagen">
+                            <img src="../imagenes/img2.jpg" alt="">
+                            <div class="overlay">
+                                <h2>Controlar la conplejidad es la esencia de la programación</h2>
+                            </div>
+                        </div>
+                        <div class="imagen">
+                            <img src="../imagenes/img3.jpg" alt="">
+                            <div class="overlay">
+                                <h2>No se trata de bits, bytes y protocolos, sino de beneficios, pérdidas y márgenes</h2>
+                            </div>
+                        </div>
+                        <div class="imagen">
+                            <img src="../imagenes/img4.jpg" alt="">
+                            <div class="overlay">
+                                <h2>Un buen desarrollador de software trabaja con disciplina y constancia desde el primer dia</h2>
+                            </div>
+                        </div>
+                        <div class="imagen">
+                            <img src="../imagenes/img5.jpg" alt="">
+                            <div class="overlay">
+                                <h2>La tecnología es mejor cuando juntas a las personas</h2>
+                            </div>
+                        </div>
+                        <div class="imagen">
+                            <img src="../imagenes/img6.jpg" alt="">
+                            <div class="overlay">
+                                <h2>Las cosas simples deberían ser simples y las cosas complejas posibles</h2>
+                            </div>
+                        </div>
+                        <div class="imagen">
+                            <img src="../imagenes/img7.jpg" alt="">
+                            <div class="overlay">
+                                <h2>Hablar es barato. Enseñame el código</h2>
+                            </div>
+                        </div>
+                        <div class="imagen">
+                            <img src="../imagenes/img8.jpg" alt="">
+                            <div class="overlay">
+                                <h2>La paciencia es un elemento clave del éxito</h2>
+                            </div>
+                        </div>
+                        <div class="imagen">
+                            <img src="../imagenes/img9.jpg" alt="">
+                            <div class="overlay">
+                                <h2>Si buscar resultados distintos, no hagas siempre lo mismo</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contenidoFormularios">
+
+                <section id="formulario3">
+                    <div id="preguntaConsultar">
+                        <form action="indexConsulta.php">
+                            <label for="correo">Para consultar la base de datos precione el botón:</label>
+                            <button type="submit" id="form3">Consultar</button>
+                        </form>
+                    </div>
+                </section>
+
+                <section id="formulario">
+                    <div id="preguntas">
+                        <form action="actualizar.php" method="POST" enctype="multipart/form-data">
+                            <h2>Información del usuario</h2>
+                            <label for="correo">Correo electronico:</label>
+                            <input type="text" name = "CORREO" id="correo">
+                            <label for="nombre">Nombre: </label>
+                            <input type="text" name = "NOMBRE"id="nombre">
+                            <label for="apPaterno">Apellido paterno:</label>
+                            <input type="text" name = "APPATERNO" id="apPaterno">
+                            <label for="apMaterno">Apellido materno:</label>
+                            <input type="text" name = "APMATERNO" id="apMaterno">
+                            <label for="edad">Edad:</label>
+                            <input type="number" name = "EDAD" id="edad">
+                            <label for="sexo">Sexo:</label>
+                            <input type="text" name = "SEXO" id="sexo">
+                            <input type="text" id="data" name="DATA" hidden="hidden">
+                            <button type="submit">Modificar</button>
+                        </form>
+                    </div>
+                </section>
+        
+                <section id="formulario2">
+                    <div id="preguntaEliminar">
+                        <form action="eliminar.php" method="POST" enctype="multipart/form-data">
+                            <label for="correo">ID a eliminar:</label>
+                            <input type="text" name = "ID" id="id">
+                            <button type="submit">Eliminar</button>
+                        </form>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer>INSTITUTO TECNOLÓGICO SUPERIOR DE MISANTLA. &COPY; 2020</footer>
+    </body>
+</html>
